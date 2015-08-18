@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Category.create(name: 'Serious')
+Category.create(name: 'Funny')
+Category.create(name: 'Useful')
+
+Bookmark.create(url: 'http://guides.rubyonrails.org/association_basics.html#the-has-one-association',
+                title: 'Active Record Associations',
+                comment: 'Very useful guide',
+                category: Category.first,
+                favorite: false)
